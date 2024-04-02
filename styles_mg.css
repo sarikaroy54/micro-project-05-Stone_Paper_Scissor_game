@@ -1,0 +1,209 @@
+.game{
+  /* border: 2px solid black; */
+  /* height: 100vh;
+  width:100vw; */
+  /* position: relative; */
+}
+
+.stone{
+  margin-top: 1.7rem;
+  z-index: 3;
+  cursor:pointer;
+}
+.stone-circle {
+  /* border: 2px solid blue; */
+  width: 40vw;
+  position:relative;
+  padding-left: 24rem;
+  z-index: 3;
+}
+.stone-circle img{
+  /* border:2px solid black; */
+  height: 8rem;
+}
+
+.stone-icon {
+  /* border: 2px solid yellow; */
+  position:absolute;
+  top:13.7rem;
+  left:25.5rem;
+  z-index: 3;
+}
+
+.scissor{
+  cursor: pointer;
+}
+.scissor-circle{
+  /* border: 2px solid pink; */
+  position:relative;
+  width: 100vw;
+  padding-left: 46rem;
+  margin-top: -8.5rem;
+  z-index: 2;
+}
+.scissor-circle img{
+  /* border:2px solid black; */
+  height: 8rem; ;
+}
+.scissor-icon{
+  /* border: 2px solid yellow; */
+  position:absolute;
+  top:13.5rem;
+  left:48.9rem;
+  z-index: 2;
+}
+
+.paper{
+  cursor: pointer;
+}
+.paper-circle{
+  /* border: 2px solid orange; */
+  position:relative;
+  padding-left: 35.3rem;
+  margin-top: 3.5rem;
+  z-index: 2;
+}
+.paper-circle img{
+  /* border:2px solid black; */
+  height: 8rem; ;
+}
+.paper-icon{
+  /* border: 2px solid yellow; */
+  position:absolute;
+  top:25rem;
+  left:37rem;
+  z-index: 2;
+}
+.line_1{
+  /* border: 5px solid brown; */
+  position:absolute;
+  top:15rem;
+  left:31rem;
+  z-index: 0;
+}
+.line_1 img{
+  width: 16rem; 
+  height: 1rem;
+}
+.line_2{
+  /* border: 5px solid brown; */
+  position:absolute;
+  top:15.5rem;
+  left: 42.4rem;
+  z-index: 0;
+  /* right:2rem; */
+}
+.line_2 img{
+  height: 15rem;
+  width: 4.3rem;
+  transform: rotate(22deg);
+}
+.line_3{
+  position:absolute;
+  top:15rem;
+  left:31rem;
+  z-index: 0;
+}
+.line_3 img{
+  width: 4.5rem;
+  height: 15rem;
+  transform: rotate(-23deg);
+}
+
+
+
+.game-rules{
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  gap: 1rem;
+  align-items: end;
+  margin-left: 62rem;
+  margin-top: -16.5rem;
+}
+.game-rule-guidelines{
+  /* border: 2px solid green; */
+  z-index: 2;
+  opacity:0;
+  width: 100%;
+  position: relative;
+  padding-right: 1.5rem;
+}
+.cross-button{
+  /* border:2px solid pink; */
+  margin-top: -1rem;
+  margin-left: 11rem;
+  position: absolute;
+  
+}
+.game-rule-guidelines button{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2rem;
+  border-color: var(--white);
+  border-style: solid;
+  border-width: 0.3rem;
+  background-color: var(--red);
+  color: var(--white);
+  font-size:1.8rem;
+  cursor: pointer;
+}
+.game-rule-guide-box{
+  /* border: 2px solid blueviolet; */
+  background-color: var(--deep_green);
+  border: 1px solid var(--white);
+  border-width: 0.3rem;
+  border-radius: 0.5rem;
+}
+.game-rule-guide{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.game-rule-guide h1{
+  color:var(--white);
+  text-align: center;
+  margin-top:0.3rem ;
+  font-size: larger;
+}
+.game-rule-guide ul{
+  /* border: 2px solid maroon; */
+  list-style-type:square;
+  display: flex;
+  flex-direction: column;
+  width:86%;
+  margin-left: 1rem;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+ul li{
+  color:yellow;
+}
+li::marker{
+  font-size: 1.3rem;
+   line-height: 1;
+}
+li span{
+  color: var(--white);
+}
+
+
+.game-rule-btn{
+  /* border: 2px solid black; */
+  z-index: 1;
+  position: absolute;
+  margin-top: 16.5rem;
+}
+.game-rule-btn button{
+  height: 2.8rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  border: 2px solid var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+}

@@ -1,0 +1,278 @@
+/* .computer-win{
+  height: 61vh;
+  width:100vw;
+} */
+
+.computer-win{
+  height: 61vh;
+  width:100vw;
+}
+/* you picked */
+.you-picked{ 
+  /* border: 2px solid black; */
+  color: var(--white);
+}
+/* pc picked */
+.pc-picked{ 
+  /* border: 2px solid black; */
+  color: var(--white);
+}
+
+.pick{
+  /* border:2px solid red; */
+  display:flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  gap:23rem;
+  padding-left: 19rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.3rem;
+}
+
+
+.comp-win-main{
+  /* border:2px solid black; */
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-left: 19rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.change{
+  cursor: pointer;
+}
+.user-image-stone{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--blue);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+
+}
+.user-image-scissor{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--purpule);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+
+}
+.user-image-paper{
+  /* border:2px solid blue; */
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--orange);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.2rem;
+
+}
+
+
+.text-between{
+  /* border:2px solid brown; */
+  padding-top: 4rem;
+}
+.text-between h1{
+  /* border: 2px solid white; */
+  color: var(--white);
+  margin-bottom:1rem ;
+}
+.you-lost{
+  font-size: larger;
+}
+.against-pc{
+  font-size: smaller;
+  padding-left: 1rem;
+}
+.text-between button{
+  font-size: 1rem;
+  margin-left: 2.5rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.pc-image{
+  cursor: pointer;
+  /* border: 2px solid violet; */
+  /* align-items: center; */
+  /* padding-top: 3rem; */
+}
+
+
+.pc-image-win-circle{
+  /* border:2px solid black; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.border-circle1-outer{
+  background-color: var(--green_l1);
+  height:15rem;
+  width:15rem;
+  border-radius: 11rem;
+}
+.border-circle2-middle{
+  background-color: var(--green_l2);
+  height:13rem;
+  width:13rem;
+  border-radius: 9rem;
+  margin-left:-14rem;
+  margin-top:0rem;
+}
+.border-circle3-inner{
+  background-color: var(--green_l3);
+  height:11rem;
+  width:11rem;
+  border-radius: 7rem;
+  margin-left:-12rem;
+}
+
+.pc-image-stone{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--blue);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10rem;
+}
+.pc-image-scissor{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--purpule);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10rem;
+}
+.pc-image-paper{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--orange);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10rem;
+}
+
+
+
+.computer-rules{
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  gap: 0.5rem;
+  align-items: end;
+  margin-left: 66rem;
+  margin-top: -16.5rem;
+}
+.computer-rule-guidelines{
+  /* border: 2px solid green; */
+  z-index: 2;
+  opacity:0; 
+  width: 100%;
+  position: relative;
+  padding-right: 1rem;
+}
+.comp-cross-button{
+  /* border:2px solid pink; */
+  margin-top: -1rem;
+  margin-left: 11rem;
+  position: absolute;
+  
+}
+.computer-rule-guidelines button{
+  /* margin-left:16.5rem; */
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2rem;
+  border-color: var(--white);
+  border-style: solid;
+  border-width: 0.3rem;
+  background-color: var(--red);
+  color: var(--white);
+  font-size:1.8rem;
+  cursor: pointer;
+}
+.computer-rule-guide-box{
+  /* border: 2px solid blueviolet; */
+  background-color: var(--deep_green);
+  border: 1px solid var(--white);
+  border-width: 0.3rem;
+  border-radius: 0.5rem;
+}
+.computer-rule-guide{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.computer-rule-guide h1{
+  color:var(--white);
+  text-align: center;
+  margin-top:0.3rem ;
+  font-size: larger;
+}
+.computer-rule-guide ul{
+  /* border: 2px solid maroon; */
+  list-style-type:square;
+  display: flex;
+  flex-direction: column;
+  width:86%;
+  margin-left: 1rem;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+ul li{
+  color:yellow;
+}
+li::marker{
+  font-size: 1.3rem;
+   line-height: 1;
+}
+li span{
+  color: var(--white);
+}
+
+
+.computer-rule-btn{
+  /* border: 2px solid black; */
+  z-index: 1;
+  position: absolute;
+  margin-top: 16.5rem;
+}
+.computer-rule-btn button{
+  height: 2.5rem;
+  width: 6.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  border: 2px solid var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+}

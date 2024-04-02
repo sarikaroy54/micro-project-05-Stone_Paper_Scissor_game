@@ -1,0 +1,234 @@
+.tie{
+  height: 59.5vh;
+  width:100vw;
+}
+/* you picked */
+.you-picked-tie{ 
+  /* border: 2px solid black; */
+  color: var(--white);
+}
+/* pc picked */
+.pc-picked-tie{ 
+  /* border: 2px solid black; */
+  color: var(--white);
+}
+
+.tie-pick{
+  /* border:2px solid red; */
+  display:flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  gap:13.5rem;
+  padding-left: 24rem;
+  margin-top: 4rem;
+}
+
+
+.tie-main{
+  /* border:2px solid black; */
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-left: 24rem;
+  margin-top:1.5rem;
+  margin-bottom: 5.4rem;
+}
+.tie-user-image{
+  cursor: pointer;
+  /* border:2px solid blue; */
+  /* padding-top: 1rem; */
+}
+.tie-user-img-stone{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--blue);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 3.2rem; */
+}
+.tie-user-img-scissor{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--purpule);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tie-user-img-paper{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--orange);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tie-text-between{
+  /* border: 2px solid white; */
+  padding-top: 2rem;
+}
+.tie-text-between h1{
+  /* border: 2px solid white; */
+  color: var(--white);
+  margin-bottom:1rem ;
+}
+.you-lost{
+  font-size: larger;
+}
+.against-pc{
+  font-size: smaller;
+  padding-left: 1rem;
+}
+.tie-text-between button{
+  width:6rem;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.tie-pc-image{
+  cursor: pointer;
+  /* border: 2px solid violet; */
+  /* padding-top: 4rem; */
+}
+.tie-pc-img-stone{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--blue);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tie-pc-img-scissor{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--purpule);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tie-pc-img-paper{
+  height: 9rem;
+  width: 9rem;
+  border-radius: 100px;
+  border: 12px solid var(--orange);
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.tie-rules{
+  /* border:2px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  gap: 0.5rem;
+  align-items: end;
+  margin-left: 66rem;
+  margin-top: -16.5rem;
+}
+.tie-rule-guidelines{
+  /* border: 2px solid green; */
+  z-index: 2;
+  opacity:0; 
+  width: 100%;
+  position: relative;
+  padding-right: 1rem;
+}
+.tieup-cross-button{
+  /* border:2px solid pink; */
+  margin-top: -1rem;
+  margin-left: 11rem;
+  position: absolute;
+  
+}
+.tie-rule-guidelines button{
+  /* margin-left:16.5rem; */
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2rem;
+  border-color: var(--white);
+  border-style: solid;
+  border-width: 0.3rem;
+  background-color: var(--red);
+  color: var(--white);
+  font-size:1.8rem;
+  cursor: pointer;
+}
+.tie-rule-guide-box{
+  /* border: 2px solid blueviolet; */
+  background-color: var(--deep_green);
+  border: 1px solid var(--white);
+  border-width: 0.3rem;
+  border-radius: 0.5rem;
+}
+.tie-rule-guide{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tie-rule-guide h1{
+  color:var(--white);
+  text-align: center;
+  margin-top:0.3rem ;
+  font-size: larger;
+}
+.tie-rule-guide ul{
+  /* border: 2px solid maroon; */
+  list-style-type:square;
+  display: flex;
+  flex-direction: column;
+  width:86%;
+  margin-left: 1rem;
+  font-size: small;
+  margin-bottom: 0.5rem;
+}
+ul li{
+  color:yellow;
+}
+li::marker{
+  font-size: 1.3rem;
+   line-height: 1;
+}
+li span{
+  color: var(--white);
+}
+
+
+.tie-rule-btn{
+  /* border: 2px solid black; */
+  z-index: 1;
+  position: absolute;
+  margin-top: 16.5rem;
+}
+.tie-rule-btn button{
+  height: 2.5rem;
+  width: 6.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--green);
+  color: var(--white);
+  border: 2px solid var(--white);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+

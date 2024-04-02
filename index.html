@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles_h.css">
+  <link rel="stylesheet" href="styles_mg.css">
+  <link rel="stylesheet" href="styles_mc.css">
+  <link rel="stylesheet" href="styles_mu.css">
+  <link rel="stylesheet" href="styles_mu_n.css">
+  <link rel="stylesheet" href="styles_mt.css">
+</head>
+
+<body>
+  <main class="body">
+    <header class="header" style="display: block;">
+      <div class="white-box">
+        <div class="name">
+          ROCK <br> PAPER <br> SCISSORS
+        </div>
+        <div class="scores">
+          <div class="computer-score">
+            <div>COMPUTER <br> SCORE</div>
+            <div class="score-values" id="comp-score"></div>
+          </div>
+          <div class="user-score">
+            <div>YOUR <br> SCORE</div>
+            <div class="score-values" id="your-score"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="game" style="display:block">
+        <div class="stone">
+          <div class="stone-circle">
+            <img src="./images/stone-circle.png" alt="stone-circle" class="stone_in">
+          </div>
+          <div class="stone-icon">
+            <img src="./images/stone.png" alt="stone" class="stone_in">
+          </div>
+        </div>
+        <div class="line_1">
+          <img src="./images/Line 1.png" alt="1st line">
+        </div>
+        <div class="scissor">
+          <div class="scissor-circle">
+            <img src="./images/scissor-circle.png" alt="scissor-circle" id="scissor" class="scissor_in">
+          </div>
+          <div class="scissor-icon">
+            <img src="./images/scissor.png" alt="scissor" class="scissor_in">
+          </div>
+
+
+        </div>
+        <div class="line_2">
+          <img src="./images/Line 2.png" alt="2nd line">
+        </div>
+        <div class="paper">
+          <div class="paper-circle">
+            <img src="./images/paper-circle.png" alt="paper-circle" id="paper" class="paper_in">
+          </div>
+          <div class="paper-icon">
+            <img src="./images/paper.png" alt="paper" class="paper_in">
+          </div>
+        </div>
+        <div class="line_3">
+          <img src="./images/Line 3.png" alt="3rd line">
+        </div>
+        <div class="game-rules">
+          <div class="game-rule-guidelines">
+            <div class="cross-button">
+              <button class="game-cross-button">&times;</button>
+            </div>
+            <div class="game-rule-guide-box">
+              <div class="game-rule-guide">
+                <h1>Game Rules</h1>
+                <ul>
+                  <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                  <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                      paper, scissors.”</span></li>
+                  <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
+                  </li>
+                  <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="game-rule-btn">
+            <button>RULES</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="play">
+
+        <div class="computer-win" style="display:none;">
+          <div class="pick">
+            <div class="you-picked">YOU PICKED</div>
+            <div class="pc-picked">PC PICKED</div>
+          </div>
+          <div class="comp-win-main">
+            <div class="change">
+              <!-- <div class="user-image-stone">
+            <img src="./images/stone.png" alt="stone" class="user-image-icon">
+          </div> -->
+            </div>
+            <div class="text-between">
+              <h1><span class="you-lost">YOU LOST</span> <br> <span class="against-pc">AGAINST PC</span></h1>
+              <button class="play_again_computer">PLAY AGAIN</button>
+            </div>
+            <div class="pc-image">
+              <div class="pc-image-win-circle">
+                <div class="border-circle1-outer">
+                </div>
+                <div class="border-circle2-middle">
+                </div>
+                <div class="border-circle3-inner">
+                </div>
+                <div class="insert-computer-win">
+                  <!-- <div class="pc-image-scissor">
+                  <img src="./images/scissor.png" alt="scissor" class="pc-image-icon">
+                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="computer-rules">
+            <div class="computer-rule-guidelines">
+              <div class="comp-cross-button">
+                <button class="computer-cross-button">&times;</button>
+              </div>
+              <div class="computer-rule-guide-box">
+                <div class="computer-rule-guide">
+                  <h1>Game Rules</h1>
+                  <ul>
+                    <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                    <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper, scissors.”</span></li>
+                    <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
+                    </li>
+                    <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="computer-rule-btn">
+              <button>RULES</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="user-win" style="display:none;">
+          <div class="pick-user">
+            <div class="you-picked-user">YOU PICKED</div>
+            <div class="pc-picked-user">PC PICKED</div>
+          </div>
+          <div class="user-win-main-sec">
+            <div class="user-img">
+              <div class="user-img-win-circle">
+                <div class="user-circle1-outer">
+                </div>
+                <div class="user-circle2-middle">
+                </div>
+                <div class="user-circle3-inner">
+                </div>
+                <div class="insert-user-win">
+                  <!-- <div class="user-img-stone">
+                <img src="./images/stone.png" alt="stone-circle">
+              </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="text-between-user">
+              <h1><span class="you-win">YOU WIN</span> <br> <span class="agnst-pc">AGAINST PC</span></h1>
+              <button id="play_again_user">PLAY AGAIN</button>
+            </div>
+            <div class="pc-img">
+              <!-- <div class="pc-img-scissor">
+              <img src="./images/scissor.png" alt="scissor-circle" class="pc-img-icon">
+            </div> -->
+            </div>
+          </div>
+          <div class="btns">
+
+            <div class="user-rules">
+              <div class="user-rule-guidelines">
+                <div class="usrs-cross-button">
+                  <button class="user-cross-button">&times;</button>
+                </div>
+                <div class="user-rule-guide-box">
+                  <div class="user-rule-guide">
+                    <h1>Game Rules</h1>
+                    <ul>
+                      <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                      <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just
+                          “rock, paper, scissors.”</span></li>
+                      <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the
+                          time</span></li>
+                      <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="user-rule-btn">
+                <button>RULES</button>
+              </div>
+            </div>
+            <div class="user-next-btn">
+              <button> <a href="next_page.html" style="text-decoration: none; color: var(--white);">NEXT</a></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tie" style="display:none;">
+          <div class="tie-pick">
+            <div class="you-picked-tie">YOU PICKED</div>
+            <div class="pc-picked-tie">PC PICKED</div>
+          </div>
+          <div class="tie-main">
+            <div class="tie-user-image">
+              <!-- <div class="tie-user-img-stone">
+              <img src="./images/stone.png" alt="stone-circle" class="tie-image-icon">
+            </div> -->
+            </div>
+            <div class="tie-text-between">
+              <h1>TIE UP</h1>
+              <button id="play_again_tie">REPLAY</button>
+            </div>
+            <div class="tie-pc-image">
+              <!-- <div class="tie-pc-img-stone">
+              <img src="./images/stone.png" alt="scissor-circle" class="tie-pc-image-icon">
+            </div> -->
+            </div>
+          </div>
+
+          <div class="tie-rules">
+            <div class="tie-rule-guidelines">
+              <div class="tieup-cross-button">
+                <button class="tie-cross-button">&times;</button>
+              </div>
+              <div class="tie-rule-guide-box">
+                <div class="tie-rule-guide">
+                  <h1>Game Rules</h1>
+                  <ul>
+                    <li><span>Rock beats scissors, scissors beat paper, and paper beats rock.</span></li>
+                    <li><span>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper, scissors.”</span></li>
+                    <li><span>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span>
+                    </li>
+                    <li><span>If both players lay down the same hand, each player lays down another hand</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tie-rule-btn">
+              <button>RULES</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
